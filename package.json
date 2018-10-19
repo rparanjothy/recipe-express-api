@@ -1,0 +1,20 @@
+{
+  "name": "chennaichuppi",
+  "version": "1.0.0",
+  "description": "chennaiChuppi",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "chuppi"
+  ],
+  "author": "chuppi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.4"
+  }
+}
