@@ -3,6 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import AppNavBar from "./AppNavBar";
 import Fader from "./Fader";
+import Message from './Message';
+
 class App extends Component {
   render() {
     return (
@@ -22,6 +24,7 @@ class App extends Component {
           <AppNavBar />
         </header>
         <Fader/>
+        <Message/>
       </div>
     );
   }

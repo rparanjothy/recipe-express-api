@@ -12,7 +12,7 @@ class Fader extends Component {
   }
 
   changeX() {
-    if (this.x_local <= 10) {
+    if (this.x_local < 9) {
       this.x_local += 1;
       console.log("Xlocal:" + this.x_local);
       this.setState({ x: this.x_local });
@@ -24,7 +24,7 @@ class Fader extends Component {
   render() {
     return (
       <div>
-        <Button onClick={this.changeX}> Welcome </Button>
+        <Button onClick={this.changeX} style={{margin:"20px"}}> Welcome </Button>
         <Fade in={this.state.fadeSwitch}>
           This message will disappear post 10 clicks {this.x_local}
         </Fade>
