@@ -6,13 +6,11 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  Container
+  NavLink
 } from "reactstrap";
 
 class AppNavBar extends Component {
-
-constructor(props) {
+  constructor(props) {
     super(props);
 
     this.toggle = this.toggle.bind(this);
@@ -28,13 +26,15 @@ constructor(props) {
   render() {
     return (
       <div>
-        <Navbar color="dark" light expand="md">
-          <NavbarBrand href="/">Recipe</NavbarBrand>
+        <Navbar color="blue" light expand="md">
+          <NavbarBrand href="/">Secret Recipes</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="http://localhost:5000/api/recipes">View All Recipes</NavLink>
+                <NavLink href="http://localhost:5000/api/recipes">
+                  View All Recipes
+                </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="#">Delete</NavLink>
@@ -45,7 +45,6 @@ constructor(props) {
               <NavItem>
                 <NavLink href="#">Add</NavLink>
               </NavItem>
-              
             </Nav>
           </Collapse>
         </Navbar>

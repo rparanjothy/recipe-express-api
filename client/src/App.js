@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import AppNavBar from "./AppNavBar";
-
+import Fader from "./Fader";
 class App extends Component {
   render() {
     return (
@@ -18,10 +18,10 @@ class App extends Component {
             </ul>
           </div>
            */}
-           <div> Welcome!</div>
 
           <AppNavBar />
         </header>
+        <Fader/>
       </div>
     );
   }
