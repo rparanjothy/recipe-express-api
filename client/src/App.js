@@ -4,6 +4,7 @@ import "./App.css";
 import AppNavBar from "./AppNavBar";
 import Fader from "./Fader";
 import Message from './Message';
+import Recipes from './Recipes';
 
 class App extends Component {
   render() {
@@ -25,6 +26,7 @@ class App extends Component {
         </header>
         <Fader/>
         <Message/>
+        <Recipes/>
       </div>
     );
   }
